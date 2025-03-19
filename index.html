@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img src="imagem/logo.png" alt="imagem-logo-starbucks">
+
+    <h1>It`s not just coffee, it`s Starbucks</h1>
+    <p>lorem ipsum dolor sit amet consectetur adipiscing elit. Não precisa ficar escrevendo exatamente o que ele está dizendo.</p>
+    <button>Clique aqui</button>
+
+    <img src="imagem/thumb1.png" alt="imagem-copo-starbucks"> 
+    <img src="imagem/img1.png" alt="imagem-copo-do-starbucks">
+    <img src="imagem/img2.png" alt="imagem-copo-pequeno">
+    <img src="imagem/img3.png" alt="imagem-copo-mediano">
+
+    <div class="loginform">
+        <h2>Login</h2>
+        <form id="loginform">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="menssage"></p>
+
+        <p>Não tem uma conta? <a href="registro.html" class="register-btn">Registre-se aqui</a></p>
+    </div>
+
+    <script>
+        document.getElementById("loginform").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            // Aqui você pode validar as credenciais antes de redirecionar
+            window.location.href = "perfil.html"; // Redireciona para a página perfil.html
+        });
+    </script>
+</body>
+</html>
